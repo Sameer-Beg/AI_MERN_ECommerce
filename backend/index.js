@@ -17,7 +17,7 @@ app.use(cookieParser())
 
 // allowing the frontend to access the backend
 app.use(cors({
-    origin: ["http://localhost:5173" , "http://localhost:5174"],
+    origin: ["https://ai-mern-ecommerce-frontend.onrender.com" , "http://localhost:5174"],
     credentials: true
 }))
 app.use("/api/auth" , authRoutes)
